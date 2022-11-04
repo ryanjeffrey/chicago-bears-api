@@ -125,6 +125,90 @@ describe('roster routes', () => {
     expect(res.body).toEqual(offense);
   });
 
+  it('/roster/defense should return a list of the starting defense', async () => {
+    const res = await request(app).get('/roster/defense');
+    const defense = [
+      {
+        id: '12',
+        firstName: 'Trevis',
+        lastName: 'Gipson',
+        number: 99,
+        position: 'DL',
+      },
+      {
+        id: '13',
+        firstName: 'Justin',
+        lastName: 'Jones',
+        number: 93,
+        position: 'DL',
+      },
+      {
+        id: '14',
+        firstName: 'Angelo',
+        lastName: 'Blackson',
+        number: 90,
+        position: 'DL',
+      },
+      {
+        id: '15',
+        firstName: 'Al-Quadin',
+        lastName: 'Muhammad',
+        number: 55,
+        position: 'DL',
+      },
+      {
+        id: '16',
+        firstName: 'Nicholas',
+        lastName: 'Morrow',
+        number: 53,
+        position: 'LB',
+      },
+      {
+        id: '17',
+        firstName: 'Jack',
+        lastName: 'Sanborn',
+        number: 57,
+        position: 'LB',
+      },
+      {
+        id: '18',
+        firstName: 'Joe',
+        lastName: 'Thomas',
+        number: 45,
+        position: 'LB',
+      },
+      {
+        id: '19',
+        firstName: 'Jaylon',
+        lastName: 'Johnson',
+        number: 33,
+        position: 'CB',
+      },
+      {
+        id: '20',
+        firstName: 'Kyler',
+        lastName: 'Gordon',
+        number: 6,
+        position: 'CB',
+      },
+      {
+        id: '21',
+        firstName: 'Eddie',
+        lastName: 'Jackson',
+        number: 4,
+        position: 'S',
+      },
+      {
+        id: '22',
+        firstName: 'Jaquan',
+        lastName: 'Brisker',
+        number: 9,
+        position: 'S',
+      },
+    ];
+    expect(res.body).toEqual(defense);
+  });
+
   afterAll(() => {
     pool.end();
   });
