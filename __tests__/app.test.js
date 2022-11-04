@@ -14,9 +14,11 @@ describe('roster routes', () => {
     const res = await request(app).get('/roster');
     const expected = roster.map((player) => {
       return {
-        number: player.number,
+        id: player.id,
         firstName: player.firstName,
         lastName: player.lastName,
+        number: player.number,
+        position: player.position
       };
     });
     expect(res.body).toEqual(expected);
