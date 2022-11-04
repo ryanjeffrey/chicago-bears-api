@@ -22,6 +22,23 @@ describe('roster routes', () => {
     expect(res.body).toEqual(expected);
   });
 
+  it('/roster/:id should return player detail', async () => {
+    const res = await request(app).get('/roster/3');
+    const chaseClaypool = {
+      id: '3',
+      firstName: 'Chase',
+      lastName: 'Claypool',
+      number: 10,
+      position: 'WR',
+      height: '6-4',
+      weight: 238,
+      age: 24,
+      experience: 3,
+      college: 'Notre Dame',
+    };
+    expect(res.body).toEqual(chaseClaypool);
+  });
+
   afterAll(() => {
     pool.end();
   });
