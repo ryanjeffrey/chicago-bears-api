@@ -27,4 +27,15 @@ VALUES
 ('Cody', 'Whitehair', 65, 'LG', '6-3', 316, 30, 7, 'Kansas State'),
 ('Lucas', 'Patrick', 62, 'C', '6-3', 313, 29, 6, 'Duke'),
 ('Teven', 'Jenkins', 76, 'RG', '6-6', 321, 24, 2, 'Oklahoma State'),
-('Larry', 'Borom', 75, 'RT', '6-5', 333, 23, 2, 'Missouri');
+('Larry', 'Borom', 75, 'RT', '6-5', 333, 23, 2, 'Missouri'),
+('Trevis', 'Gipson', 99, 'DL', '6-4', 263, 25, 3, 'Tulsa'),
+('Justin', 'Jones', 93, 'DL', '6-3', 309, 26, 5, 'North Carolina State'),
+('Angelo', 'Blackson', 90, 'DL', '6-4', 315, 29, 8, 'Auburn'),
+('Al-Quadin', 'Muhammad', 55, 'DL', '6-3', 250, 27, 6, 'Miami'),
+('Nicholas', 'Morrow', 53, 'LB', '6-0', 216, 27, 5, 'Greenville'),
+('Jack', 'Sanborn', 57, 'LB', '6-2', 234, 22, 1, 'Wisconsin'),
+('Joe', 'Thomas', 45, 'LB', '6-1', 227, 31, 8, 'South Carolina State'),
+('Jaylon', 'Johnson', 33, 'CB', '6-0', 196, 23, 3, 'Utah'),
+('Kyler', 'Gordon', 6, 'CB', '6-0', 200, 22, 1, 'Washington'),
+('Eddie', 'Jackson', 4, 'S', '6-0', 206, 28, 6, 'Alabama'),
+('Jaquan', 'Brisker', 9, 'S', '6-1', 200, 23, 1, 'Penn State');
