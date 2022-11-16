@@ -18,7 +18,7 @@ describe('roster routes', () => {
         firstName: player.firstName,
         lastName: player.lastName,
         number: player.number,
-        position: player.position
+        position: player.position,
       };
     });
     expect(res.body).toEqual(expected);
