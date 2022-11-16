@@ -161,6 +161,20 @@ describe('schedule routes', () => {
     `);
   });
 
+  it('/schedule/:id should return game detail', async () => {
+    const res = await request(app).get('/schedule/11');
+    expect(res.status).toEqual(200);
+    const atlanta = {
+      id: '11',
+      date: '2022-11-20T06:00:00.000Z',
+      opponent: 'Atlanta Falcons',
+      stadium: 'Mercedes-Benz Stadium',
+      score: '0-0',
+      isWin: null,
+    };
+    expect(res.body).toEqual(atlanta);
+  });
+
   afterAll(() => {
     pool.end();
   });
